@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--VeryLightGray);
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body p {
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+.text{
+ font-size: 30px;
+ font-weight: 200;
+}
+
+h1{
+    color: var(--VeryDarkBlue);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.card{
+    max-width: 350px;
+    border-radius: 8px;
+    /* box-shadow: 2px 2px 2px 0px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.card img{
+    width: 50px;
+    float: right;
+}
+
+h2{
+    color: var(--VeryDarkBlue);
+    font-size: 20px;
+    font-weight: 600;
+}
+.card p {
+    color: var(--GrayishBlue);
+    font-size: 14px;
+}
+.card1{
+    margin-right: 20px;
+    border-top: 5px solid var(--Cyan);
+}
+.card2{
+    border-top: 5px solid var(--Red);
+}
+.card3{
+    border-top: 5px solid var(--Orange);
+}
+.card4 {
+    margin-left: 20px;
+    border-top: 5px solid var(--Blue);
+}
+
+
+@media (max-width: 860px) {
+    .cards {
+        flex-direction: column;
+    }
+    br{
+        display: none;
+    }
+    .card1{
+        margin-right: 0px;
+    }
+    .card4 {
+        margin-left: 0px;
+    }
+}
